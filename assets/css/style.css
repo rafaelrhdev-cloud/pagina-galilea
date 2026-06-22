@@ -130,7 +130,7 @@ section{padding:88px 0;}
 .slider-track{display:flex; gap:24px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:10px; scrollbar-width:none;}
 .slider-track::-webkit-scrollbar{display:none;}
 .slide-card{
-  scroll-snap-align:start; flex:0 0 min(360px,85%); background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.18);
+  scroll-snap-align:start; flex:0 0 min(420px,80%); background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.18);
   border-radius:var(--radius); padding:30px; backdrop-filter:blur(4px);
 }
 .slide-card .num{font-family:var(--mono); font-size:.78rem; color:var(--sage);}
