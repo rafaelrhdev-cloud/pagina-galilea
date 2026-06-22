@@ -1,0 +1,45 @@
+:root{
+  --sage:#BFC7B4;
+  --sage-dark:#737F66;
+  --cream:#F7F5EF;
+  --ink:#2E2E27;
+  --white:#fff;
+  --rojo:#B5564A;
+  --amarillo:#B98A3B;
+}
+*{box-sizing:border-box;}
+body{margin:0;font-family:'Inter',Arial,sans-serif;background:var(--cream);color:var(--ink);}
+
+.admin-login-body{display:flex;align-items:center;justify-content:center;min-height:100vh;}
+.login-card{background:var(--white);padding:40px;border-radius:16px;max-width:380px;width:90%;box-shadow:0 10px 40px rgba(0,0,0,.08);}
+.login-card h1{margin:0 0 4px;font-size:1.4rem;}
+.login-card .sub{margin:0 0 20px;color:#777;font-size:.9rem;}
+.login-card label{display:block;font-size:.85rem;margin-top:12px;margin-bottom:4px;}
+.login-card input{width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:8px;font-size:1rem;}
+.login-card button{margin-top:20px;width:100%;padding:12px;background:var(--sage-dark);color:#fff;border:0;border-radius:8px;font-size:1rem;cursor:pointer;}
+.login-card button:hover{background:#5f6a54;}
+.login-error{background:#fbe9e7;color:var(--rojo);padding:10px 12px;border-radius:8px;font-size:.9rem;}
+
+.admin-header{display:flex;align-items:center;justify-content:space-between;background:var(--white);padding:20px 32px;border-bottom:1px solid #e6e3d8;}
+.admin-header h1{margin:0;font-size:1.3rem;}
+.admin-header p{margin:2px 0 0;color:#777;font-size:.9rem;}
+.logout-link{color:var(--sage-dark);text-decoration:none;font-weight:600;}
+
+.admin-main{padding:32px;max-width:1200px;margin:0 auto;}
+.admin-help{background:#eef0e8;padding:12px 16px;border-radius:10px;font-size:.92rem;}
+
+.citas-table{width:100%;border-collapse:collapse;background:var(--white);border-radius:12px;overflow:hidden;margin-top:16px;font-size:.9rem;}
+.citas-table th,.citas-table td{padding:12px 14px;text-align:left;border-bottom:1px solid #eee;vertical-align:top;}
+.citas-table th{background:#eceadf;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;}
+.vacio{text-align:center;color:#999;padding:30px;}
+
+.badge{padding:4px 10px;border-radius:20px;font-size:.78rem;font-weight:600;display:inline-block;}
+.badge-pendiente{background:#fbf1da;color:var(--amarillo);}
+.badge-confirmada{background:#e3ecdc;color:#3f6b34;}
+.badge-rechazada{background:#fbe9e7;color:var(--rojo);}
+
+.acciones form{margin-bottom:6px;}
+.acciones button{border:0;padding:6px 10px;border-radius:6px;font-size:.8rem;cursor:pointer;color:#fff;margin-right:4px;}
+.btn-confirmar{background:#4f7a40;}
+.btn-rechazar{background:var(--amarillo);}
+.btn-eliminar{background:var(--rojo);}
