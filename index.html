@@ -3,437 +3,336 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lumina Studio · Invitaciones digitales hechas a la medida</title>
+<title>Tu Bienestar Psicología · Lic. Galilea López Suárez</title>
+<meta name="description" content="Psicoterapia para adolescentes y adultos basada en evidencia científica. Atención presencial en San Juan del Río, Querétaro, y en línea.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <div class="brand">
-      <span class="brand-mark">LUMINA <span class="brand-mark-italic">Studio</span></span>
-      <span class="brand-dev">by rafaelrh.dev</span>
+<header class="site-header">
+  <nav class="nav container">
+    <a href="#inicio" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none">
+        <path d="M20 4C12 8 8 16 10 26c1.5 7 7 10 10 10s8.5-3 10-10c2-10-2-18-10-22Z" stroke="#6F7A62" stroke-width="1.6"/>
+        <path d="M20 8v24M20 14c-4 1-6 4-6 4M20 20c4 1 6 4 6 4" stroke="#6F7A62" stroke-width="1.2"/>
+      </svg>
+      <span>Tu Bienestar<small>Psicología</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#consultorio">Consultorio</a></li>
+      <li><a href="#agenda">Agenda tu cita</a></li>
+      <li><a href="#aviso">Aviso de privacidad</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#agenda" class="btn btn-primary">Agenda tu cita</a>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
     </div>
-    <div class="nav-links">
-      <a href="#proceso">Cómo funciona</a>
-      <a href="#catalogo">Catálogo</a>
-      <a href="#sitios-web">Sitios web</a>
-      <a href="#personalizado">A tu medida</a>
-      <a href="#privacidad">Privacidad</a>
-    </div>
-    <a href="#contacto" class="nav-cta">Contactar →</a>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <div class="hero-brand-tag">LUMINA <span class="serif-italic">Studio</span></div>
-      <div class="eyebrow">invitaciones digitales · hechas con código</div>
-      <h1>Tu invitación no es una plantilla.<br><span class="serif-italic">Es software</span>, diseñada para tu historia.</h1>
-      <p class="lede">Soy Ingeniero en Desarrollo de Software y diseño invitaciones digitales a la medida — bodas, XV años, bautizos — publicadas como sitios web reales, rápidos y elegantes. Toma uno de mis diseños o cuéntame tu idea y la construyo desde cero.</p>
-      <div class="hero-actions">
-        <a href="#catalogo" class="btn btn-primary">Ver catálogo de diseños</a>
-        <a href="#personalizado" class="btn btn-ghost">Pedir un diseño a la medida</a>
-      </div>
-    </div>
-
-    <div class="terminal reveal" id="term">
-      <div class="term-bar">
-        <div class="term-dot"></div><div class="term-dot"></div><div class="term-dot"></div>
-        <div class="term-title">invitacion.html — build</div>
-      </div>
-      <div class="term-body">
-<span class="c-com">// generando tu invitación</span><br>
-<span class="c-key">const</span> evento = {<br>
-&nbsp;&nbsp;tipo: <span class="c-str">"Boda"</span>,<br>
-&nbsp;&nbsp;nombres: <span class="c-str">"Camila & Diego"</span>,<br>
-&nbsp;&nbsp;fecha: <span class="c-str">"2026-09-12"</span>,<br>
-&nbsp;&nbsp;estilo: <span class="c-str">"elegante · blanco y negro"</span><br>
-};<br><br>
-<span class="c-fn">renderInvitacion</span>(evento);<span class="term-cursor"></span>
-
-        <div class="term-preview">
-          <div class="preview-card">
-            <div class="pc-eyebrow">Tienen el honor de invitarte</div>
-            <h4>Camila &amp; Diego</h4>
-            <div class="pc-date">12 · SEPTIEMBRE · 2026</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </nav>
 </header>
 
-<section id="proceso">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">el proceso</div>
-      <h2>De una idea a un link que enamora, en tres pasos.</h2>
-      <p>Así de simple es trabajar conmigo, sin importar si partes de uno de mis diseños o de una idea completamente nueva.</p>
-    </div>
-    <div class="process">
-      <div class="step reveal">
-        <span class="step-tag">paso 01</span>
-        <h3>Elige un punto de partida</h3>
-        <p>Explora mi catálogo de invitaciones ya construidas — bodas, XV años, bautizos — y úsala como base, o dime que quieres algo completamente original.</p>
-      </div>
-      <div class="step reveal">
-        <span class="step-tag">paso 02</span>
-        <h3>Cuéntame tu historia</h3>
-        <p>Nombres, fecha, paleta de colores, fotos, tono de la invitación. Yo me encargo de traducir cada detalle en diseño y código.</p>
-      </div>
-      <div class="step reveal">
-        <span class="step-tag">paso 03</span>
-        <h3>Recibe tu invitación lista</h3>
-        <p>Te entrego tu invitación publicada y funcionando, lista para compartir con tus invitados desde cualquier dispositivo.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="catalogo">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">catálogo en vivo</div>
-      <h2>Diseños reales, funcionando hoy.</h2>
-      <p>Cada tarjeta es una invitación publicada y en uso. Ábrela, explórala como la abriría un invitado, y si algo te enamora, lo adaptamos a tu evento.</p>
-    </div>
-    <div class="cat-grid">
-
-      <div class="cat-card cat-card-clickable reveal" data-url="https://rafaelrhdev-cloud.github.io/boda3/" data-name="Boda · Clásica" data-cat="Boda">
-        <div class="cat-browser-bar"><span></span><span></span><span></span><div class="cat-url">rafaelrhdev-cloud.github.io/boda3</div></div>
-        <div class="cat-preview" data-src="https://rafaelrhdev-cloud.github.io/boda3/">
-          <div class="preview-frame-wrap">
-            <iframe class="preview-frame" data-src="https://rafaelrhdev-cloud.github.io/boda3/" loading="lazy" title="Vista previa de boda3"></iframe>
-          </div>
-          <div class="preview-overlay">
-            <span class="preview-pulse"></span>
-            Vista en vivo
-          </div>
-        <div class="preview-expand-hint">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-            Explorar completa
-          </div>
-        </div>
-        
-        <div class="cat-body">
-          <div class="cat-cat">Boda</div>
-          <h3>Boda · Clásica</h3>
-          <p>Invitación de boda con narrativa completa: cuenta regresiva, programa del evento, galería y confirmación de asistencia.</p>
-          <a class="cat-link" href="https://rafaelrhdev-cloud.github.io/boda3/" target="_blank" rel="noopener">
-            Ver invitación
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="cat-card cat-card-clickable reveal" data-url="https://rafaelrhdev-cloud.github.io/bodablancoynegro/" data-name="Boda · Blanco y Negro" data-cat="Boda">
-        <div class="cat-browser-bar"><span></span><span></span><span></span><div class="cat-url">rafaelrhdev-cloud.github.io/bodablancoynegro</div></div>
-        <div class="cat-preview" data-src="https://rafaelrhdev-cloud.github.io/bodablancoynegro/">
-          <div class="preview-frame-wrap">
-            <iframe class="preview-frame" data-src="https://rafaelrhdev-cloud.github.io/bodablancoynegro/" loading="lazy" title="Vista previa de bodablancoynegro"></iframe>
-          </div>
-          <div class="preview-overlay">
-            <span class="preview-pulse"></span>
-            Vista en vivo
-          </div>
-        <div class="preview-expand-hint">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-            Explorar completa
-          </div>
-        </div>
-        
-        <div class="cat-body">
-          <div class="cat-cat">Boda</div>
-          <h3>Boda · Blanco y Negro</h3>
-          <p>Una propuesta de alto contraste, tipografía editorial y atmósfera elegante para parejas que buscan algo atemporal.</p>
-          <a class="cat-link" href="https://rafaelrhdev-cloud.github.io/bodablancoynegro/" target="_blank" rel="noopener">
-            Ver invitación
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="cat-card cat-card-clickable reveal" data-url="https://rafaelrhdev-cloud.github.io/bodainvitacion/" data-name="Boda · Romántica" data-cat="Boda">
-        <div class="cat-browser-bar"><span></span><span></span><span></span><div class="cat-url">rafaelrhdev-cloud.github.io/bodainvitacion</div></div>
-        <div class="cat-preview" data-src="https://rafaelrhdev-cloud.github.io/bodainvitacion/">
-          <div class="preview-frame-wrap">
-            <iframe class="preview-frame" data-src="https://rafaelrhdev-cloud.github.io/bodainvitacion/" loading="lazy" title="Vista previa de bodainvitacion"></iframe>
-          </div>
-          <div class="preview-overlay">
-            <span class="preview-pulse"></span>
-            Vista en vivo
-          </div>
-        <div class="preview-expand-hint">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-            Explorar completa
-          </div>
-        </div>
-        
-        <div class="cat-body">
-          <div class="cat-cat">Boda</div>
-          <h3>Boda · Romántica</h3>
-          <p>Una versión más íntima y suave, pensada para ceremonias cálidas y celebraciones cercanas.</p>
-          <a class="cat-link" href="https://rafaelrhdev-cloud.github.io/bodainvitacion/" target="_blank" rel="noopener">
-            Ver invitación
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="cat-card cat-card-clickable reveal" data-url="https://rafaelrhdev-cloud.github.io/xv2/" data-name="XV Años · Carta a Isabella" data-cat="XV Años">
-        <div class="cat-browser-bar"><span></span><span></span><span></span><div class="cat-url">rafaelrhdev-cloud.github.io/xv2</div></div>
-        <div class="cat-preview" data-src="https://rafaelrhdev-cloud.github.io/xv2/">
-          <div class="preview-frame-wrap">
-            <iframe class="preview-frame" data-src="https://rafaelrhdev-cloud.github.io/xv2/" loading="lazy" title="Vista previa de xv2"></iframe>
-          </div>
-          <div class="preview-overlay">
-            <span class="preview-pulse"></span>
-            Vista en vivo
-          </div>
-        <div class="preview-expand-hint">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-            Explorar completa
-          </div>
-        </div>
-        
-        <div class="cat-body">
-          <div class="cat-cat">XV Años</div>
-          <h3>XV Años · Carta a Isabella</h3>
-          <p>Narrativa emotiva con historia personal, cronograma de la noche, galería y confirmación con cupo limitado por familia.</p>
-          <a class="cat-link" href="https://rafaelrhdev-cloud.github.io/xv2/" target="_blank" rel="noopener">
-            Ver invitación
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="cat-card cat-card-clickable reveal" data-url="https://rafaelrhdev-cloud.github.io/xvsopcion1/" data-name="XV Años · Opción Glam" data-cat="XV Años">
-        <div class="cat-browser-bar"><span></span><span></span><span></span><div class="cat-url">rafaelrhdev-cloud.github.io/xvsopcion1</div></div>
-        <div class="cat-preview" data-src="https://rafaelrhdev-cloud.github.io/xvsopcion1/">
-          <div class="preview-frame-wrap">
-            <iframe class="preview-frame" data-src="https://rafaelrhdev-cloud.github.io/xvsopcion1/" loading="lazy" title="Vista previa de xvsopcion1"></iframe>
-          </div>
-          <div class="preview-overlay">
-            <span class="preview-pulse"></span>
-            Vista en vivo
-          </div>
-        <div class="preview-expand-hint">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-            Explorar completa
-          </div>
-        </div>
-        
-        <div class="cat-body">
-          <div class="cat-cat">XV Años</div>
-          <h3>XV Años · Opción Glam</h3>
-          <p>Más festiva y vibrante, pensada para quintañeras que quieren una invitación llamativa y memorable.</p>
-          <a class="cat-link" href="https://rafaelrhdev-cloud.github.io/xvsopcion1/" target="_blank" rel="noopener">
-            Ver invitación
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="cat-card cat-card-clickable reveal" data-url="https://rafaelrhdev-cloud.github.io/bautizo/" data-name="Bautizo · Luz y Sencillez" data-cat="Bautizo">
-        <div class="cat-browser-bar"><span></span><span></span><span></span><div class="cat-url">rafaelrhdev-cloud.github.io/bautizo</div></div>
-        <div class="cat-preview" data-src="https://rafaelrhdev-cloud.github.io/bautizo/">
-          <div class="preview-frame-wrap">
-            <iframe class="preview-frame" data-src="https://rafaelrhdev-cloud.github.io/bautizo/" loading="lazy" title="Vista previa de bautizo"></iframe>
-          </div>
-          <div class="preview-overlay">
-            <span class="preview-pulse"></span>
-            Vista en vivo
-          </div>
-        <div class="preview-expand-hint">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-            Explorar completa
-          </div>
-        </div>
-        
-        <div class="cat-body">
-          <div class="cat-cat">Bautizo</div>
-          <h3>Bautizo · Luz y Sencillez</h3>
-          <p>Diseño tierno y luminoso, ideal para celebrar el bautizo de tu pequeño con calidez y buen gusto.</p>
-          <a class="cat-link" href="https://rafaelrhdev-cloud.github.io/bautizo/" target="_blank" rel="noopener">
-            Ver invitación
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="sitios-web">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">más allá de las invitaciones</div>
-      <h2>También construyo la página de tu negocio o tu marca personal.</h2>
-      <p>El mismo cuidado que pongo en cada invitación lo aplico a sitios web para negocios, profesionales independientes y proyectos personales: rápidos, a tu medida y publicados como software real, no como una plantilla genérica.</p>
-    </div>
-
-    <div class="feature-card cat-card-clickable reveal" data-url="https://rafaelrhdev-cloud.github.io/pagina-galilea/" data-name="Página Galilea" data-cat="Sitio web de negocio">
-      <div class="feature-preview cat-preview" data-src="https://rafaelrhdev-cloud.github.io/pagina-galilea/">
-        <div class="preview-frame-wrap">
-          <iframe class="preview-frame" data-src="https://rafaelrhdev-cloud.github.io/pagina-galilea/" loading="lazy" title="Vista previa de Página Galilea"></iframe>
-        </div>
-        <div class="preview-overlay">
-          <span class="preview-pulse"></span>
-          Vista en vivo
-        </div>
-        <div class="preview-expand-hint">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-          Explorar completa
-        </div>
-      </div>
-      <div class="feature-body">
-        <div class="cat-cat">Sitio web de negocio</div>
-        <h3>Página Galilea</h3>
-        <p>Ejemplo real de un sitio web construido para un negocio: presentación de marca, servicios y contacto, publicado y funcionando como cualquier página profesional.</p>
-        <a class="cat-link" href="https://rafaelrhdev-cloud.github.io/pagina-galilea/" target="_blank" rel="noopener">
-          Ver sitio completo
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-        </a>
-      </div>
-    </div>
-
-    <div class="web-types reveal">
-      <div class="web-type">
-        <div class="step-tag">negocios</div>
-        <h3>Sitios para tu empresa</h3>
-        <p>Presencia profesional para tu negocio: servicios, catálogo, contacto y todo lo que tus clientes necesitan encontrar.</p>
-      </div>
-      <div class="web-type">
-        <div class="step-tag">personal</div>
-        <h3>Marca personal</h3>
-        <p>Portafolio, perfil profesional o página personal — tu presencia en internet, diseñada para representarte bien.</p>
-      </div>
-      <div class="web-type">
-        <div class="step-tag">a la medida</div>
-        <h3>Lo que tengas en mente</h3>
-        <p>Cuéntame tu idea y la construyo desde cero, con el mismo nivel de diseño y cuidado que ves en cada proyecto.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="personalizado">
-  <div class="wrap custom-wrap">
-    <div class="custom-copy reveal">
-      <div class="eyebrow">a tu medida</div>
-      <h2>¿Ya tienes una idea? Yo la convierto en código.</h2>
-      <p>No estás limitado al catálogo. Mándame tus colores, tu historia, tus fotos y referencias, y diseño una invitación única para tu evento — desde cero, o partiendo de cualquier diseño existente como base.</p>
-      <ul class="custom-list">
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Paleta, tipografía y tono adaptados a tu evento</li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Secciones a tu elección: galería, cronograma, RSVP, mesa de regalos</li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Publicada como un sitio web real, rápido en cualquier dispositivo</li>
-      </ul>
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">🌿 Espacio para tu bienestar emocional</div>
+      <h1>Te acompaño a <em>comprender</em> tus emociones y construir cambios significativos.</h1>
+      <p>Psicoterapia para adolescentes y adultos basada en evidencia científica, con atención presencial y en línea, en un espacio de respeto, empatía y confidencialidad.</p>
       <div class="hero-actions">
-        <a href="#contacto" class="btn btn-primary">Enviar mi idea</a>
+        <a href="#agenda" class="btn btn-primary">Agenda tu cita</a>
+        <a href="#sobre-mi" class="btn btn-outline">Conoce más sobre mí</a>
+      </div>
+      <div class="hero-credentials">
+        <div><strong>15193644</strong>Cédula profesional</div>
+        <div><strong>TCC</strong>Enfoque cognitivo-conductual</div>
+        <div><strong>3pm – 8pm</strong>Horario de citas</div>
       </div>
     </div>
-    <div class="custom-panel reveal">
-      <div class="eyebrow">diff.patch</div>
-      <div class="diff">
-<span class="del">- tipo: "plantilla genérica"</span><br>
-<span class="del">- colores: "predeterminados"</span><br>
-<span class="add">+ tipo: "tu historia"</span><br>
-<span class="add">+ colores: "los que elijas"</span><br>
-<span class="add">+ secciones: ["galería", "RSVP", "regalos"]</span><br>
-<span class="add">+ autor: "rafaelrh.dev"</span>
+    <div class="hero-visual">
+      <figure class="hero-photo">
+        <svg class="leaf" width="160" style="position:absolute;right:10px;top:10px" viewBox="0 0 100 160" fill="none"><path d="M50 0C30 30 20 70 50 160C80 70 70 30 50 0Z" fill="#fff" opacity=".25"/></svg>
+        <figcaption>Lic. Galilea López Suárez · Psicóloga Clínica</figcaption>
+      </figure>
+      <div class="hero-badge"><strong>100%</strong>Confidencial y basado en ética profesional</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST STRIP ================= -->
+<section class="trust" style="padding:0">
+  <div class="container">
+    <div class="trust-item"><span class="ic">🤍</span><div><strong>Acompañamiento</strong>Te escucho y te acompaño en tu proceso personal.</div></div>
+    <div class="trust-item"><span class="ic">🔒</span><div><strong>Confidencialidad</strong>Un espacio seguro, ético y 100% confidencial.</div></div>
+    <div class="trust-item"><span class="ic">🌱</span><div><strong>Enfoque personalizado</strong>Terapia adaptada a tus necesidades y objetivos.</div></div>
+    <div class="trust-item"><span class="ic">🧠</span><div><strong>Basado en evidencia</strong>Trabajo desde la Terapia Cognitivo-Conductual.</div></div>
+  </div>
+</section>
+
+<!-- ================= SOBRE MI ================= -->
+<section id="sobre-mi">
+  <div class="container about-grid">
+    <div class="about-photo">
+      <span class="tag">Consulta · San Juan del Río, Qro.</span>
+    </div>
+    <div>
+      <div class="eyebrow">Sobre mí</div>
+      <h2 class="section-title">Lic. Galilea López Suárez<br><em>Psicóloga Clínica</em></h2>
+      <p class="section-lead">
+        Soy licenciada en Psicología Clínica, con formación complementaria en Psicología Criminal y Forense,
+        Psicotraumatología, y Trauma Psicológico y Regulación Emocional. Brindo atención a adolescentes y adultos
+        desde el enfoque Cognitivo-Conductual, un modelo respaldado por la evidencia científica.
+      </p>
+      <ul class="about-list">
+        <li>Un espacio seguro y libre de juicios.</li>
+        <li>Atención profesional basada en evidencia científica.</li>
+        <li>Acompañamiento empático y humano.</li>
+        <li>Confidencialidad y ética profesional en cada sesión.</li>
+        <li>Herramientas prácticas adaptadas a tus necesidades.</li>
+      </ul>
+      <div class="cred-strip">
+        <span>Cédula profesional 15193644</span>
+        <span>Diplomado en Psicología Criminal y Forense</span>
+        <span>Diplomado en Psicotraumatología</span>
       </div>
     </div>
   </div>
 </section>
 
-<section id="privacidad">
-  <div class="wrap privacy-grid">
-    <div class="lock-visual reveal">
-      <div class="lock-row"><span class="k">repositorio</span><span class="v badge-private">PRIVADO</span></div>
-      <div class="lock-row"><span class="k">código fuente</span><span class="v badge-private">PROTEGIDO</span></div>
-      <div class="lock-row"><span class="k">invitación publicada</span><span class="v badge-live">EN LÍNEA</span></div>
-      <div class="lock-row"><span class="k">acceso de invitados</span><span class="v badge-live">SOLO VISTA</span></div>
-    </div>
-    <div class="privacy-copy reveal">
-      <div class="eyebrow">propiedad y privacidad</div>
-      <h2>Lo que ves es la invitación. El código se queda conmigo.</h2>
-      <p>Cada diseño que te entrego vive en un repositorio privado: nadie puede ver, copiar ni reutilizar el código fuente. Lo que tus invitados reciben es únicamente el sitio web terminado y funcionando — exactamente como debe ser.</p>
-    </div>
-  </div>
-</section>
-
-<section class="contact-section" id="contacto">
-  <div class="wrap">
-    <div class="contact-card reveal">
-      <div>
-        <div class="eyebrow">trabajemos juntos</div>
-        <h2>¿Listo para tu invitación o tu página?</h2>
-        <p class="role">Ingeniero en Desarrollo de Software</p>
-        <p class="contact-name">Rafael Rocha Hernández</p>
-
-        <div class="contact-social">
-          <a href="https://www.instagram.com/lumina_studiols/" target="_blank" rel="noopener" class="social-pill social-pill-brand">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
-            @lumina_studiols
-          </a>
-          <a href="https://www.instagram.com/rafa_echid/" target="_blank" rel="noopener" class="social-pill">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
-            @rafa_echid
-          </a>
-        </div>
-      </div>
-
-      <div class="contact-detail">
-        <div class="contact-row">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2V6z"/></svg>
-          <a href="mailto:rafaelrh.dev@gmail.com" id="email-link">rafaelrh.dev@gmail.com</a>
-        </div>
-        <button class="copy-btn" id="copy-email">Copiar correo</button>
-
-        <div class="contact-row contact-row-phone">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <a href="tel:+524271278213" id="phone-link">427 127 8213</a>
-        </div>
-        <button class="copy-btn copy-btn-ghost" id="copy-phone">Copiar teléfono</button>
-      </div>
+<!-- ================= AREAS ================= -->
+<section id="areas" style="background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="container">
+    <div class="eyebrow">Áreas de atención</div>
+    <h2 class="section-title">¿En qué puedo <em>acompañarte</em>?</h2>
+    <p class="section-lead">Atención para adolescentes y adultos en distintas problemáticas emocionales y conductuales.</p>
+    <div class="areas-grid">
+      <div class="area-card"><div class="num">01</div><h3>Ansiedad</h3>
+        <ul><li>Trastorno de Ansiedad Generalizada (TAG)</li><li>Crisis de ansiedad</li><li>Estrés y preocupación excesiva</li><li>Regulación emocional</li></ul></div>
+      <div class="area-card"><div class="num">02</div><h3>TOC</h3>
+        <ul><li>Pensamientos intrusivos</li><li>Compulsiones</li><li>Manejo de la incertidumbre</li></ul></div>
+      <div class="area-card"><div class="num">03</div><h3>Estado de ánimo</h3>
+        <ul><li>Depresión y distimia</li><li>Bajo estado de ánimo</li><li>Problemas de autoestima</li></ul></div>
+      <div class="area-card"><div class="num">04</div><h3>Trauma psicológico</h3>
+        <ul><li>Procesamiento de experiencias traumáticas</li><li>Estrés postraumático</li><li>Violencia psicológica</li></ul></div>
+      <div class="area-card"><div class="num">05</div><h3>Adicciones</h3>
+        <ul><li>Consumo problemático de sustancias</li><li>Prevención de recaídas</li><li>Habilidades de afrontamiento</li></ul></div>
+      <div class="area-card"><div class="num">06</div><h3>Terapia para adolescentes</h3>
+        <ul><li>Ansiedad y autoestima</li><li>Bullying</li><li>Dificultades familiares</li></ul></div>
     </div>
   </div>
 </section>
 
+<!-- ================= SERVICIOS SLIDER ================= -->
+<section id="servicios" class="servicios">
+  <div class="container">
+    <div class="eyebrow">Servicios</div>
+    <h2 class="section-title">Procesos diseñados <em>para ti</em></h2>
+    <p class="section-lead">Desliza para conocer las modalidades de acompañamiento disponibles.</p>
+
+    <div class="slider-wrap">
+      <div class="slider-track" id="sliderTrack">
+        <article class="slide-card">
+          <div class="num">01</div>
+          <h3>Terapia individual</h3>
+          <p>Espacio de acompañamiento para adolescentes y adultos que buscan comprender mejor sus emociones,
+          afrontar dificultades personales y desarrollar herramientas para su bienestar. Aborda ansiedad,
+          depresión, TOC, trauma, autoestima y regulación emocional.</p>
+          <div class="modal-tags"><span>Presencial</span><span>En línea</span></div>
+        </article>
+        <article class="slide-card">
+          <div class="num">02</div>
+          <h3>Atención en crisis y primeros auxilios psicológicos</h3>
+          <p>Para quienes atraviesan una situación emocionalmente impactante: crisis de ansiedad, eventos
+          traumáticos recientes, duelos, violencia o problemas familiares. Brinda estabilidad emocional y
+          contención inmediata.</p>
+          <div class="modal-tags"><span>Presencial</span><span>En línea</span></div>
+        </article>
+        <article class="slide-card">
+          <div class="num">03</div>
+          <h3>Terapia de sesión única</h3>
+          <p>Pensada para una necesidad puntual: tomar una decisión importante, obtener una perspectiva
+          profesional o adquirir herramientas para un problema específico, sin la expectativa de iniciar un
+          proceso de varias sesiones.</p>
+          <div class="modal-tags"><span>Presencial</span><span>En línea</span></div>
+        </article>
+        <article class="slide-card">
+          <div class="num">04</div>
+          <h3>Terapia para adolescentes</h3>
+          <p>Acompañamiento dirigido a adolescentes que enfrentan ansiedad, baja autoestima, bullying o
+          dificultades familiares, ayudándoles a desarrollar herramientas emocionales propias de su etapa
+          de desarrollo.</p>
+          <div class="modal-tags"><span>Presencial</span><span>En línea</span></div>
+        </article>
+        <article class="slide-card">
+          <div class="num">05</div>
+          <h3>Manejo de ansiedad y estrés</h3>
+          <p>Proceso enfocado en identificar los disparadores de la ansiedad y el estrés, y desarrollar
+          estrategias de regulación emocional para recuperar el bienestar en el día a día.</p>
+          <div class="modal-tags"><span>Presencial</span><span>En línea</span></div>
+        </article>
+        <article class="slide-card">
+          <div class="num">06</div>
+          <h3>Acompañamiento en duelo</h3>
+          <p>Espacio de contención para procesar la pérdida de una persona, relación o etapa de vida,
+          avanzando a tu propio ritmo hacia la aceptación y el bienestar emocional.</p>
+          <div class="modal-tags"><span>Presencial</span><span>En línea</span></div>
+        </article>
+      </div>
+      <div class="slider-controls">
+        <button id="prevSlide" aria-label="Anterior">←</button>
+        <button id="nextSlide" aria-label="Siguiente">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONSULTORIO ================= -->
+<section id="consultorio">
+  <div class="container">
+    <div class="eyebrow">El espacio</div>
+    <h2 class="section-title">Un lugar para <em>sentirte en calma</em></h2>
+    <p class="section-lead">Consulta en Quintas de Guadalupe, San Juan del Río, Querétaro. También disponible en línea por videollamada.</p>
+    <div class="consultorio-grid">
+      <div class="cphoto"><span>Sala de espera</span></div>
+      <div class="cphoto"><span>Consultorio</span></div>
+      <div class="cphoto"><span>Detalle</span></div>
+      <div class="cphoto"><span>Recepción</span></div>
+      <div class="cphoto"><span>Ventana / luz natural</span></div>
+    </div>
+    <p style="margin-top:20px; font-size:.85rem; color:var(--ink-soft);">
+      * Sustituye estas tarjetas por las fotografías reales del consultorio: <code>assets/img/consultorio-1.jpg</code> … <code>consultorio-5.jpg</code> (ver README).
+    </p>
+  </div>
+</section>
+
+<!-- ================= AGENDA ================= -->
+<section id="agenda" class="agenda">
+  <div class="container agenda-grid">
+    <div class="agenda-info">
+      <div class="eyebrow">Agenda tu cita</div>
+      <h2 class="section-title">Reserva tu <em>espacio</em></h2>
+      <p class="section-lead">
+        Atiendo de <strong>3:00 p.m. a 8:00 p.m.</strong>, de forma presencial y en línea. Al enviar tu solicitud,
+        la cita queda en estado <strong>pendiente</strong>: solo se agenda en definitiva cuando la Lic. Galilea
+        López se comunique contigo y confirme personalmente el horario.
+      </p>
+      <div class="agenda-hours" id="legendHours"></div>
+      <div class="legend">
+        <span><span class="dot libre"></span> Disponible</span>
+        <span><span class="dot ocupado"></span> Ocupado / en proceso de confirmación</span>
+      </div>
+    </div>
+
+    <form class="booking-card" id="bookingForm">
+      <div id="formMsg" class="form-msg"></div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono / WhatsApp</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="servicio">Servicio</label>
+          <select id="servicio" name="servicio" required>
+            <option value="">Selecciona...</option>
+            <option>Terapia Individual</option>
+            <option>Atención en Crisis y Primeros Auxilios Psicológicos</option>
+            <option>Terapia de Sesión Única</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="modalidad">Modalidad</label>
+          <select id="modalidad" name="modalidad" required>
+            <option value="">Selecciona...</option>
+            <option value="presencial">Presencial</option>
+            <option value="online">En línea</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" required>
+      </div>
+      <div class="form-group">
+        <label>Horario (3 p.m. – 8 p.m.)</label>
+        <div class="slots-grid" id="slotsGrid"></div>
+        <input type="hidden" id="hora" name="hora" required>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Cuéntame brevemente el motivo de tu consulta (opcional)</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="acepto" required>
+        <label for="acepto">He leído y acepto el <a href="#aviso">Aviso de Privacidad</a> sobre el tratamiento de mis datos personales.</label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Enviar solicitud de cita</button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= AVISO DE PRIVACIDAD ================= -->
+<section id="aviso" class="aviso">
+  <div class="container">
+    <div class="eyebrow">Aviso de privacidad</div>
+    <h2 class="section-title">Tratamiento de tu <em>información</em></h2>
+    <div class="aviso-box">
+      <h3>Responsable del tratamiento</h3>
+      <p>Lic. Galilea López Suárez, Psicóloga Clínica (Cédula Profesional 15193644), con domicilio en Quintas de Guadalupe, San Juan del Río, Querétaro, es responsable del tratamiento de tus datos personales conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p>
+      <h3>Datos que recabamos</h3>
+      <p>Nombre, correo electrónico, teléfono y, en su caso, el motivo de consulta que compartas voluntariamente al solicitar una cita. Estos datos se usan únicamente para contactarte, confirmar tu cita y brindarte atención psicológica.</p>
+      <h3>Confidencialidad</h3>
+      <p>La información compartida en sesión está protegida por el secreto profesional y el código ético de la psicología. No se comparte con terceros, salvo obligación legal expresa.</p>
+      <h3>Tus derechos (ARCO)</h3>
+      <p>Puedes acceder, rectificar, cancelar u oponerte al uso de tus datos personales en cualquier momento, escribiendo a <a href="mailto:lopesuarezgalilea@gmail.com">lopesuarezgalilea@gmail.com</a> o por WhatsApp al 427 273 3835.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer>
-  <div class="footer-brand">LUMINA <span class="footer-brand-italic">Studio</span></div>
-  <div class="footer-sub">diseñado y construido por Rafael Rocha Hernández · Ingeniero en Desarrollo de Software</div>
+  <div class="container footer-grid">
+    <div>
+      <div class="eyebrow" style="color:var(--sage)">Tu Bienestar Psicología</div>
+      <p style="margin-top:10px; max-width:320px;">
+        Pedir ayuda no es una señal de debilidad, sino un acto de valentía. Estoy aquí para acompañarte en tu proceso de cambio y bienestar emocional.
+      </p>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>WhatsApp: 427 273 3835</li>
+        <li><a href="mailto:lopesuarezgalilea@gmail.com">lopesuarezgalilea@gmail.com</a></li>
+        <li><a href="https://instagram.com/cic_galileals" target="_blank" rel="noopener">@cic_galileals</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Ubicación</h4>
+      <ul>
+        <li>Quintas de Guadalupe</li>
+        <li>San Juan del Río, Querétaro</li>
+        <li>Atención presencial y en línea</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="anio"></span> Lic. Galilea López Suárez · Cédula Profesional 15193644</span>
+    <span>No se emiten facturas</span>
+  </div>
 </footer>
 
-<div class="preview-modal" id="preview-modal" aria-hidden="true">
-  <div class="preview-modal-backdrop" data-close></div>
-  <div class="preview-modal-panel">
-    <div class="preview-modal-bar">
-      <div class="preview-modal-dots"><span></span><span></span><span></span></div>
-      <div class="preview-modal-meta">
-        <span class="preview-modal-cat" id="modal-cat">Boda</span>
-        <span class="preview-modal-name" id="modal-name">Boda · Clásica</span>
-      </div>
-      <div class="preview-modal-actions">
-        <a id="modal-open-tab" href="#" target="_blank" rel="noopener" class="modal-action-link">
-          Abrir en pestaña nueva
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-        </a>
-        <button class="modal-close" data-close aria-label="Cerrar vista previa">✕</button>
-      </div>
-    </div>
-    <div class="preview-modal-frame-wrap">
-      <iframe id="modal-iframe" class="preview-modal-frame" src="" title="Vista previa interactiva"></iframe>
-    </div>
-  </div>
-</div>
-
-<script src="script.js"></script>
-
+<script src="assets/js/script.js"></script>
 </body>
 </html>
