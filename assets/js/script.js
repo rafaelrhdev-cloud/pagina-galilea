@@ -18,6 +18,32 @@ if (menuToggle) {
   });
 }
 
+// ===== Aviso de privacidad: botón flotante + modal cerrable =====
+const avisoOverlay = document.getElementById('avisoOverlay');
+const avisoClose = document.getElementById('avisoClose');
+const avisoTriggers = document.querySelectorAll('.open-aviso');
+
+function abrirAviso() {
+  if (!avisoOverlay) return;
+  avisoOverlay.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
+}
+function cerrarAviso() {
+  if (!avisoOverlay) return;
+  avisoOverlay.classList.remove('is-open');
+  document.body.style.overflow = '';
+}
+avisoTriggers.forEach(btn => btn.addEventListener('click', abrirAviso));
+if (avisoClose) avisoClose.addEventListener('click', cerrarAviso);
+if (avisoOverlay) {
+  avisoOverlay.addEventListener('click', (e) => {
+    if (e.target === avisoOverlay) cerrarAviso();
+  });
+}
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') cerrarAviso();
+});
+
 // ===== Slider de servicios =====
 const track = document.getElementById('sliderTrack');
 const prevBtn = document.getElementById('prevSlide');
@@ -102,7 +128,7 @@ if (bookingForm) {
     formMsg.className = 'form-msg';
     formMsg.textContent = '';
 
-    if (!horaInput.value) {
+    if (horaInput && !horaInput.value) {
       formMsg.classList.add('error');
       formMsg.textContent = 'Por favor selecciona un horario disponible.';
       return;
